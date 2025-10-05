@@ -38,7 +38,7 @@ class Game:
         self.screen = pygame.display.set_mode(
             (self._settings.WIDTH, self._settings.HEIGHT)
         )
-        pygame.display.set_caption("Jogo de Plantação 🌾")
+        pygame.display.set_caption("Butterfly's Garden 🌾")
         self.clock = pygame.time.Clock()
         self.font = pygame.font.SysFont(None, 36)
         self.font_button = pygame.font.SysFont(None, 20)
