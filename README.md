@@ -60,6 +60,24 @@ The methodology and data sources for this project are based on tools and knowled
 * **NASA Earthdata - Agriculture and Water Management:** [Link](https://www.earthdata.nasa.gov/topics/human-dimensions/agriculture-production)
 * **NASA Worldview Visualization Interface:** [Link](https://worldview.earthdata.nasa.gov)
 
+### Target Variable Data (Pest Incidence)
+
+To train the predictive model in a supervised learning context, the input features (environmental data) must be correlated with a ground truth target variable: historical pest incidence. For the initial prototype focused on Brazil, a single, centralized real-time database for all pest occurrences is not publicly available. Therefore, the project will employ a composite data acquisition strategy, leveraging information from various official and research-based sources to build a historical dataset.
+
+The primary sources for this data include:
+
+* **National-Level Sources:**
+    * **Embrapa (Brazilian Agricultural Research Corporation):** Technical publications, scientific articles, and communications are accessed via the Embrapa Information Agency and its Infoteca-e repository to gather research-backed occurrence data.
+    * **MAPA (Ministry of Agriculture and Livestock):** Official phytosanitary alerts and technical notes provide information on the national sanitary situation for plants.
+    * **Conab (National Supply Company):** Agricultural monitoring bulletins offer insights into regional trends and concerns regarding pest pressure on crops, although the data is not always quantitative.
+
+* **State-Level Sources:**
+    * State agricultural defense agencies are often the best sources for more dynamic and localized information. This includes entities such as the Coordenadoria de Defesa Agropecuária (CDA) in São Paulo, the Agência de Defesa Agropecuária do Paraná (Adapar), the Instituto de Desenvolvimento Rural do Paraná (IDR-Paraná), and the Instituto de Defesa Agropecuária do Estado de Mato Grosso (Indea-MT).
+
+> **Note on Geographic Scalability:**
+>
+> The data collection methodology for pest incidence is initially focused on Brazilian sources. However, the model is designed for global applicability. By integrating with analogous data sources from other countries and regions (such as the USDA in the United States, the EFSA in Europe, or other national plant protection organizations), the **Butterfly's Garden** simulation engine can be readily adapted to provide forecasts for diverse agricultural landscapes worldwide.
+
 ## Installation and Usage
 
 1.  Clone the repository:
