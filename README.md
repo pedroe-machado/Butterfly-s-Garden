@@ -38,6 +38,7 @@ Our model's feature set is composed of multiple layers of geospatial time-series
 4.  **Simulation & Visualization:** The trained model is integrated into the `Pygame` engine. When a user introduces a new climatic event, this event perturbs the initial state of the simulation, and the model forecasts the cascading effects over subsequent time steps.
 
 ## Project Structure
+```
 
 butterflys-garden/
 ├── src/
@@ -47,6 +48,7 @@ butterflys-garden/
 ├── requirements.txt   \# Project dependencies.
 └── README.md          \# Project documentation.
 
+````
 
 ## Foundational Sources
 
